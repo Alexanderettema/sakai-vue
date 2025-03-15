@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div class="font-semibold text-xl mb-4c ">Empty Aexl</div>
+        <div class="font-semibold text-xl mb-4">Empty Aexl</div>
         <Breadcrumb :model="items" class="mb-4" />
         <DataTable v-model:selection="selectedProduct" :value="products" dataKey="code" tableStyle="min-width: 50rem">
             <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
@@ -13,7 +13,9 @@
 </template>
 
 <script>
-import Breadcrumb f DataTable from 'primevue/datatable';
+import Breadcrumb from 'primevue/breadcrumb';
+import Column from 'primevue/column';
+import DataTable from 'primevue/datatable';
 import { ref } from 'vue';
 
 export default {
