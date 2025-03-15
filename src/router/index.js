@@ -95,6 +95,11 @@ const router = createRouter({
                     component: () => import('@/views/pages/Empty.vue')
                 },
                 {
+                    path: '/pages/emptyaexl',
+                    name: 'emptyaexl',
+                    component: () => import('@/views/pages/Emptyaexl.vue')
+                },
+                {
                     path: '/pages/crud',
                     name: 'crud',
                     component: () => import('@/views/pages/Crud.vue')
